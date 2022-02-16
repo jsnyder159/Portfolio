@@ -77,7 +77,7 @@ header nav ul li {
     position:absolute;
     bottom: 10px;
     left: 10px;
-    color: orange
+    color: linen;
 
 }
 
@@ -149,22 +149,11 @@ header nav ul li {
 }
 
 
-.aboutme h2 {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: orange;
-    font-size: 4vw;
-    line-height: 1.1;
-
-}
-
 .aboutme p {
-    font-size: 2vw;
+    font-size:large;
     text-align: center;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    color: orange;
+    margin: 30px;
+    color: linen;
     border-color:black;
 }
 /* ----- My image ----- */
@@ -183,6 +172,7 @@ section h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 section nav {
@@ -192,7 +182,8 @@ section nav {
 }
 
 section nav a {
-    margin: 10px;
+    text-align-last: inherit;
+    margin-bottom: 25px;
 }
 
 
@@ -205,10 +196,14 @@ section nav a {
 }
 
 .flexbox-item {
-    width: 325px;
+    width: 20%;
     height: 150px;
     flex-basis: calc(50%-1em);
     border: 5px solid darkred;
+    object-fit: cover;
+    vertical-align: top;
+    display:flex;
+    align-items: flex-end;
     margin: 10px;
     background:left;
     background-image: url("./images/coming-soon-g1153e42f7_640.jpg");
@@ -217,10 +212,21 @@ section nav a {
 
 .flexbox-big {
     min-height: 300px;
-    flex-basis: 85%;
+    flex-basis: 79%;
     background:left;
     background-image: url("./images/01-html-css-git-homework-demo.png");
     background-size:cover;
+}
+.flexbox-container div {
+    background-color:linen;
+    padding: 8px 10px;
+
+}
+
+.flexbox-container h4 {
+    font-size: 1.6rem;
+
+
 }
 
 /* ---------- Footer --------*/
@@ -236,7 +242,7 @@ footer {
 }
 
 footer h1 {
-    font-size: 200%;
+    font-size: 175%;
     background-color: black;
 
 }
@@ -244,12 +250,27 @@ footer h1 {
 footer nav ul li {
     display: inline-block;
     align-items: center;
-    font-size: 2vw;
+    font-size: 150%;
     padding-right: 11px;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
+    .flexbox-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexbox-item {
+        width: 80%;
+        height: 200px;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
