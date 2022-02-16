@@ -1,3 +1,5 @@
+
+/* ----- Universal formating ----- */
 * {
     border: 0;
     box-sizing: border-box;
@@ -20,6 +22,8 @@ body {
 }
 
 /*--------- Header --------- */
+
+/* Header format */
 header {
     display:flex;
     justify-content:space-between;
@@ -30,12 +34,14 @@ header {
     border-bottom: 7px solid orangered;
 }
 
+/* Formating for my name in header */
 header h1{
     font-size: 200%;
     background-color: black;
 
 }
 
+/* Formating for nav bar elements */
 header nav ul li {
     display: inline-block;
     align-items: center;
@@ -43,7 +49,7 @@ header nav ul li {
     padding-right: 11px;
 }
 
-/* ---- Highlight options in nav bar top/bottom/sidebar ---- */
+/* ---- Highlight options in nav bar top/bottom ---- */
 .highlight a{
     padding-right: 11px;
     text-decoration: none;
@@ -78,6 +84,7 @@ header nav ul li {
     bottom: 10px;
     left: 10px;
     color: linen;
+    text-shadow: 1px 1px orange;
 
 }
 
@@ -87,26 +94,12 @@ header nav ul li {
     top: 165px;
     left: 220px;
 }
-/* HTML 5 Glow */
-.symbol1:hover{
-    background-color: darkred;
-    box-shadow: 0 0 5px 5px darkred;
-    border-radius: 50%;
-}
-
 
 /* CSS3 Logo */
 .symbol2 {
     position: absolute;
     top: 165px;
     left: 253px;
-}
-
-/* CSS Glow */
-.symbol2:hover{
-    background-color: darkred;
-    box-shadow: 0 0 5px 5px darkred;
-    border-radius: 50%;
 }
 
 /* Python Logo */
@@ -116,13 +109,6 @@ header nav ul li {
     left: 283px;
 }
 
-/* Python Glow */
-.symbol3:hover{
-    background-color: darkred;
-    box-shadow: 0 0 5px 5px darkred;
-    border-radius: 50%;
-}
-
 /* Javascript Logo */
 .symbol4 {
     position:absolute;
@@ -130,17 +116,16 @@ header nav ul li {
     left: 313px;
 }
 
-/* Javascript Glow */
-.symbol4:hover{
+/* Glow for language buttons on hover*/
+.glow:hover{
     background-color: darkred;
     box-shadow: 0 0 5px 5px darkred;
     border-radius: 50%;
 }
 
-/* --------------------------------------------- */
-
 
 /* -------- About Me -------*/
+/* making bio area flexbox + formating */
 .aboutme {
     display:flex;
     width: 100%;
@@ -148,26 +133,36 @@ header nav ul li {
     border-top: 7px solid orangered;
 }
 
-
+/* Formating for bio paragraphs */
 .aboutme p {
     font-size:large;
-    text-align: center;
+    text-align: left;
+    justify-content: center;
+    display:inline;
     margin: 30px;
     color: linen;
-    border-color:black;
 }
+
+/* Indents both paragraphs */
+.tab {
+    margin-left: 40px;
+    color:linen;
+}
+
 /* ----- My image ----- */
 .portrait {
     max-height: 250px;
     width: 12%;
     min-width: auto;
 }
-
+/* Floating my picture left of Bio paragraph */
 .left {
     float: left;
     margin-left: 20px;
 }
 /*----- My Favorite Things ----- */
+
+/* Title "A few of my favorite things" */
 section h3 {
     display: flex;
     flex-direction: row;
@@ -175,12 +170,14 @@ section h3 {
     margin-bottom: 5px;
 }
 
+/* Formating for List items */
 section nav {
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/* Formating for list items */
 section nav a {
     text-align-last: inherit;
     margin-bottom: 25px;
@@ -195,6 +192,7 @@ section nav a {
     justify-content: center;
 }
 
+/* Smaller my work box */
 .flexbox-item {
     width: 20%;
     height: 150px;
@@ -210,6 +208,7 @@ section nav a {
     background-size:cover;
 }
 
+/* Large my work box */
 .flexbox-big {
     min-height: 300px;
     flex-basis: 79%;
@@ -217,8 +216,13 @@ section nav a {
     background-image: url("./images/01-html-css-git-homework-demo.png");
     background-size:cover;
 }
+
+/* Hoover Glow for most recent work box */
+.flexbox-big:hover {
+    box-shadow: 0px 0px 40px linen;
+}
+
 .flexbox-container div {
-    background-color:linen;
     padding: 8px 10px;
 
 }
@@ -241,12 +245,14 @@ footer {
     border-top: 7px solid orangered;
 }
 
+/* Footer "Contact Me" */
 footer h1 {
     font-size: 175%;
     background-color: black;
 
 }
 
+/* Footer email/github */
 footer nav ul li {
     display: inline-block;
     align-items: center;
@@ -255,6 +261,7 @@ footer nav ul li {
 
 }
 
+/* Changes format for 930px and under viewing devices */
 @media screen and (max-width: 930px) {
     .flexbox-container {
         flex-direction: column;
@@ -274,4 +281,27 @@ footer nav ul li {
 
 }
 
+/* Changes format for 665px and under viewing devices */
+@media screen and (max-width: 665px){
+    .portrait {
+        max-height:fit-content;
+        width:fit-content;
+    }
 
+    .highlight a{
+        margin-left: 3px;
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 605px){
+    footer h1 {
+        font-size: 100%;
+
+    }
+
+    footer nav ul li {
+        font-size: 100%;
+    }
+}
