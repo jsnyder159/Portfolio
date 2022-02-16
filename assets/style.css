@@ -1,5 +1,4 @@
-
-/* ----- Universal formating ----- */
+/* Universal formating for entire page */
 * {
     border: 0;
     box-sizing: border-box;
@@ -23,7 +22,7 @@ body {
 
 /*--------- Header --------- */
 
-/* Header format */
+/* flex box setup and header formating */
 header {
     display:flex;
     justify-content:space-between;
@@ -34,14 +33,13 @@ header {
     border-bottom: 7px solid orangered;
 }
 
-/* Formating for my name in header */
+/* My name font size */
 header h1{
     font-size: 200%;
-    background-color: black;
 
 }
 
-/* Formating for nav bar elements */
+/* Header list items formating */
 header nav ul li {
     display: inline-block;
     align-items: center;
@@ -49,13 +47,16 @@ header nav ul li {
     padding-right: 11px;
 }
 
-/* ---- Highlight options in nav bar top/bottom ---- */
+/* ---- Changing Colors on options in nav bar top/bottom ---- */
+
+/* format for options to select in nav bar top/bottom */
 .highlight a{
     padding-right: 11px;
     text-decoration: none;
     
 }
 
+/* Changes text color and text shadow */
 .highlight a:hover {
     color: linen;
     text-shadow: 1px 1px orange;
@@ -116,7 +117,7 @@ header nav ul li {
     left: 313px;
 }
 
-/* Glow for language buttons on hover*/
+/* Glow for language buttons */
 .glow:hover{
     background-color: darkred;
     box-shadow: 0 0 5px 5px darkred;
@@ -125,7 +126,8 @@ header nav ul li {
 
 
 /* -------- About Me -------*/
-/* making bio area flexbox + formating */
+
+/* flex box setup and format for about me */
 .aboutme {
     display:flex;
     width: 100%;
@@ -133,7 +135,7 @@ header nav ul li {
     border-top: 7px solid orangered;
 }
 
-/* Formating for bio paragraphs */
+/* formats paragraphs in about me secion */
 .aboutme p {
     font-size:large;
     text-align: left;
@@ -143,26 +145,29 @@ header nav ul li {
     color: linen;
 }
 
-/* Indents both paragraphs */
+/* Tabs paragraphs in about me section */
 .tab {
     margin-left: 40px;
     color:linen;
 }
 
 /* ----- My image ----- */
+
+/* My Picture format */
 .portrait {
     max-height: 250px;
     width: 12%;
     min-width: auto;
 }
-/* Floating my picture left of Bio paragraph */
+
+/* Floating my picture left of bio */
 .left {
     float: left;
     margin-left: 20px;
 }
 /*----- My Favorite Things ----- */
 
-/* Title "A few of my favorite things" */
+/* flex box setup and format */
 section h3 {
     display: flex;
     flex-direction: row;
@@ -170,14 +175,14 @@ section h3 {
     margin-bottom: 5px;
 }
 
-/* Formating for List items */
+/* Title setting */
 section nav {
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
 
-/* Formating for list items */
+/* Options setting */
 section nav a {
     text-align-last: inherit;
     margin-bottom: 25px;
@@ -186,6 +191,7 @@ section nav a {
 
 /* ----------- Flexboxes for my work section -----------*/
 
+/* Flex box setup */
  .flexbox-container {
     display: flex;
     flex-wrap: wrap;
@@ -217,12 +223,14 @@ section nav a {
     background-size:cover;
 }
 
-/* Hoover Glow for most recent work box */
+/* Glow effect on most recent work box */
 .flexbox-big:hover {
     box-shadow: 0px 0px 40px linen;
 }
 
+/* Box in most recent work image */
 .flexbox-container div {
+    background-color:linen;
     padding: 8px 10px;
 
 }
