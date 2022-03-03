@@ -214,6 +214,51 @@ section nav a {
     background-size:cover;
 }
 
+.flexbox-item2 {
+    width: 20%;
+    height: 150px;
+    flex-basis: calc(50%-1em);
+    border: 5px solid darkred;
+    object-fit: cover;
+    vertical-align: top;
+    display:flex;
+    align-items: flex-end;
+    margin: 10px;
+    background:left;
+    background-image: url("./images/working-gen.PNG");
+    background-size:cover;
+}
+
+.flexbox-item3 {
+    width: 20%;
+    height: 150px;
+    flex-basis: calc(50%-1em);
+    border: 5px solid darkred;
+    object-fit: cover;
+    vertical-align: top;
+    display:flex;
+    align-items: flex-end;
+    margin: 10px;
+    background:left;
+    background-image: url("./images/main-page.PNG");
+    background-size:cover;
+}
+
+.flexbox-item4 {
+    width: 20%;
+    height: 150px;
+    flex-basis: calc(50%-1em);
+    border: 5px solid darkred;
+    object-fit: cover;
+    vertical-align: top;
+    display:flex;
+    align-items: flex-end;
+    margin: 10px;
+    background:left;
+    background-image: url("./images/coming-soon-g1153e42f7_640.jpg");
+    background-size:cover;
+}
+
 /* Large my work box */
 .flexbox-big {
     min-height: 300px;
@@ -224,14 +269,15 @@ section nav a {
 }
 
 /* Glow effect on most recent work box */
-.flexbox-big:hover {
+
+.flexglow:hover {
     box-shadow: 0px 0px 40px linen;
 }
 
 /* Box in most recent work image */
 .flexbox-container div {
     background-color:linen;
-    padding: 8px 10px;
+    padding: 6px 8px;
 
 }
 
@@ -241,11 +287,17 @@ section nav a {
 
 }
 
+
+.flexbox-container h5 {
+    font-size: .8rem;
+}
+
+
 /* ---------- Footer --------*/
 
 footer {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     background-color: black;
