@@ -1,6 +1,9 @@
-Link to live page : https://jsnyder159.github.io/Portfolio/
-Link to Github repo: https://github.com/jsnyder159/Portfolio
+# Portfolio
 
+[Portfolio Page](https://jsnyder159.github.io/Portfolio/) 
+
+
+## Description
 Task: Create a personal profile for potential employers to view.  They will want to see previous work when profile is loaded, my name, a recent photo or avatar, and links to the different sections on the page.  When they click on a navigation like the UI will scroll to that section.  When the UI scrolls to work there should the first application be titled, image larger in size than other work.  Once clicking on the image it should take you to the deployed website.  When the page is resized or viewed on various devices the layout is responsive and adapts to my viewport.
 
 
